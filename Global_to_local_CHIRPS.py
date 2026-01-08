@@ -69,9 +69,10 @@ while current_date <= end_date:
                 dest.write(out_image)
 
         os.remove(tif_path)
-        print(f"Guardado: {clipped_path}")
+        print(f"Saved: {clipped_path}")
     else:
-        print(f"No se pudo descargar: {file_name} | Código: {response.status_code}")
+        print(f"It can't be download: {file_name} | Código: {response.status_code}")
 
 
     current_date += timedelta(days=1)
+
